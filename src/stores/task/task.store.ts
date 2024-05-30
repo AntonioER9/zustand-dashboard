@@ -24,7 +24,6 @@ interface TaskState {
 }
 
 
-
 const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (set, get) => ({
 
   draggingTaskId: undefined,
@@ -65,7 +64,6 @@ const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (set, get)
     // }))
 
   },
-
 
   setDraggingTaskId: (taskId: string) => {
     set({ draggingTaskId: taskId })

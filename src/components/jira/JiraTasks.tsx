@@ -6,8 +6,6 @@ import { SingleTask } from './SingleTask';
 import { useTasks } from '../../hooks/useTasks';
 
 
-
-
 interface Props {
   title: string;
   tasks: Task[];
@@ -27,8 +25,6 @@ export const JiraTasks = ({ title, status, tasks }: Props) => {
     onDragOver,
 
   } = useTasks({ status });
-
-
 
   return (
     <div
@@ -66,14 +62,11 @@ export const JiraTasks = ({ title, status, tasks }: Props) => {
       {/* Task Items */}
       <div className="h-full w-full">
 
-
         {
           tasks.map(task => (
             <SingleTask key={task.id} task={task} />
           ))
         }
-
-
 
       </div>
     </div>
