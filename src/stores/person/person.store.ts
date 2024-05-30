@@ -20,8 +20,8 @@ const storeAPi: StateCreator<PersonState & Actions, [["zustand/devtools", never]
   firstName: '',
   lastName: '',
 
-  setFirstName: (value: string) => set(({ firstName: value }), false, 'setFirstName'),
-  setLastName: (value: string) => set(({ lastName: value }), false, 'setLastName'),
+  setFirstName: (value: string) => set(({ firstName: value }), false, 'setFirstName'), //el último campo es para que aparezca en redux dev tools
+  setLastName: (value: string) => set(({ lastName: value }), false, 'setLastName'), //el último campo es para que aparezca en redux dev tools
 
 });
 
