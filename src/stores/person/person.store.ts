@@ -32,7 +32,7 @@ export const usePersonStore = create<PersonState & Actions>()(
       ,{
         name: 'person-storage',
         // storage: customSessionStorage,
-        storage: firebaseStorage, //Donde guardaremos la información
+        // storage: firebaseStorage, //Donde guardaremos la información
       })
   )
 );
