@@ -23,8 +23,6 @@ tesloApi.interceptors.request.use(
   }
 )
 
-
-
 export {
   tesloApi
 }
