@@ -75,7 +75,7 @@ const storeApi: StateCreator<TaskState, [["zustand/immer", never]]> = (set, get)
 
   changeTaskStatus: (taskId: string, status: TaskStatus) => {
 
-    const task = {...get().tasks[taskId] };
+    const task = {...get().tasks[taskId] }; //estamos creando un nuevo objeto en este punto.
     task.status = status;
 
     set( state => {
